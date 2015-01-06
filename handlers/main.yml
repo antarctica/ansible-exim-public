@@ -1,0 +1,4 @@
+---
+
+- name: Start EXIM
+  service: name=exim4 state=started

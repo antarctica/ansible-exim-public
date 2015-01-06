@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  description: Installs the EXIM Mail Transfer Agent
+  author: British Antarctic Survey - Web and Applications Team
+  company: British Antarctic Survey
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+  - name: Ubuntu
+      - trusty
+  categories:
+  - web
+
+armadillo_info:
+  name: Exim Public
+  version: 0.1.2
+  source: git@stash.ceh.ac.uk:7999/barc/exim-public.git
+  dependencies:
+  - git@stash.ceh.ac.uk:7999/barc/core.git#v0.5.1
+
+dependencies:
+  - core
